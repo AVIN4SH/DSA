@@ -23,10 +23,17 @@ int main() {
     //* String type
     string name = "John Doe";   // String (sequence of characters)
 
+    //* String input
+    string str;
+    cout << "Input string: ";
+    getline(cin, str);
+    cout << "Value of the string: " << str << "\n";
+
     //* Wide character type (for Unicode support)
     wchar_t wideChar = L'Ω';    // Wide character
 
     // Displaying values
+    cout << "\nDisplaying Values: \n" << endl;
     cout << "Integer (int): " << age << endl;
     cout << "Short (short): " << shortNum << endl;
     cout << "Long (long): " << longNum << endl;
