@@ -20,24 +20,24 @@ int main()
     cin >> age;
     if (age < 0)
     { // Validating Input
-        cout << "Invalid Input. Please input a valid Age\n";
+        cout << "Invalid Input. Please input a valid Age";
         return 1;
     }
     if (age < 18)
     {
-        cout << "You're not Eligible for job\n";
+        cout << "You're not Eligible for job";
     }
-    else if (age < 55)
+    else if (age <= 57)
     {
-        cout << "You're Eligible for job\n";
-    }
-    else if (age <= 57) // No need to check `age >= 55`, since it's already covered
-    {
-        cout << "You're Eligible for job but Retirement is Soon\n";
+        cout << "You're Eligible for job";
+        if (age >= 55)
+        {
+            cout << ", but Retirement is Soon";
+        }
     }
     else
     {
-        cout << "Its Retirement Time\n";
+        cout << "Its Retirement Time";
     }
     return 0;
 }
